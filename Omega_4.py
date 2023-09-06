@@ -166,7 +166,7 @@ def dashboard_page():
     sorted_cov_corr_df = sorted_cov_corr_df.sort_values(by=['Correlation with SPY', 'Scaled Covariance'], ascending=[False, False])
 
     # Display the sorted DataFrame in a table with numbered index to the left of the sidebar
-    st.sidebar.subheader("Top 10 Tickers with Correlation and Covariance")
+    st.sidebar.subheader("Top Tickers with Correlation and Covariance")
     st.sidebar.table(sorted_cov_corr_df[['Ticker', 'Correlation with SPY', 'Scaled Covariance']].head(20))
 
 
