@@ -1,7 +1,13 @@
 import streamlit as st
+import yfinance as yf
+import pandas as pd
+import wikipedia
+import streamlit as st
+import plotly.graph_objects as go
 
 # Function for Page 1
 def page1():
+
     st.title("Page 1")
     st.write("This is Page 1. Replace this with your Page 1 content.")
 
