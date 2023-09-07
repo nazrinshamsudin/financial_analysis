@@ -23,7 +23,7 @@ def financial_analysis_dashboard():
 
     # Your code for the Company Data Analysis page here
     # Dashboard Page
-    st.title("Financial")
+    st.title("Financial Dashboard Analysis")
     st.write("This is the work of Nazrin Shamsudin, enjoy the analysis of stock prices.🙂")
 
         # Function to fetch company data
@@ -374,7 +374,8 @@ def company_data_analysis():
     selected_tickers = ["AAPL", "MSFT", "AMZN", "GOOGL", "NVDA"]
 
     # Streamlit App
-    st.title("S&P 500 Company Data")
+    st.title("S&P 500 Company Data Analysis")
+    st.write("This is the work of Nazrin Shamsudin, enjoy the analysis of stock prices.💸")
     st.sidebar.header("Settings")
 
     # Create a sidebar multi-select widget to select tickers (excluding SPY)
