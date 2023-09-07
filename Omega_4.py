@@ -239,7 +239,7 @@ def company_data_analysis():
 
             scatter_fig.add_annotation(
                 x=correlation,
-                y=scaled_covariance,
+                y=covariance,
                 xshift=-24,
                 text=ticker,
                 showarrow=False
