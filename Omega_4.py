@@ -232,7 +232,7 @@ def company_data_analysis():
                 y=[scaled_covariance],
                 mode='markers',
                 marker=dict(size=15),
-                text=[f"{ticker} (Scaled Cov: {covariance:.5f}, Corr: {correlation:.5f})"],
+                text=[f"{ticker} (Scaled Cov: {scaled_covariance:.5f}, Corr: {correlation:.5f})"],
                 hoverinfo='text',
                 name=ticker
             ))
