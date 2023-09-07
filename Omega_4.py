@@ -232,14 +232,14 @@ def company_data_analysis():
                 y=[scaled_covariance],
                 mode='markers',
                 marker=dict(size=15),
-                text=[f"{ticker} (Scaled Cov: {scaled_covariance:.5f}, Corr: {correlation:.5f})"],
+                text=[f"{ticker} (Scaled Cov: {covariance:.5f}, Corr: {correlation:.5f})"],
                 hoverinfo='text',
                 name=ticker
             ))
 
             scatter_fig.add_annotation(
                 x=correlation,
-                y=covariance,
+                y=scaled_covariance,
                 xshift=-24,
                 text=ticker,
                 showarrow=False
@@ -287,10 +287,10 @@ def company_data_analysis():
         top_ticker_table = st.sidebar.empty()  # Create an empty placeholder for the table
 
         if top_ticker_table.button("Refresh Top Tickers"):  # Add a "Refresh" button
-            top_ticker_data = cov_corr_df.head(10)[['Ticker', 'Correlation', 'Scaled Covariance']]
+            top_ticker_data = cov_corr_df.head(10)[['Ticker', 'Correlation', 'Covariance']]
             top_ticker_table.dataframe(top_ticker_data)
         else:
-            top_ticker_table.dataframe(cov_corr_df.head(10)[['Ticker', 'Correlation', 'Scaled Covariance']])
+            top_ticker_table.dataframe(cov_corr_df.head(10)[['Ticker', 'Correlation', 'Covariance']])
 
 
         # Create return and return% tables
