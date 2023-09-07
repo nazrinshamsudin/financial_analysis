@@ -7,7 +7,7 @@ navigation_options = {
 }
 
 # Create a sidebar text input for navigation
-selected_page = st.sidebar.selectbox("Select Page", list(navigation_options.keys()), index=0)
+selected_page = st.sidebar.selectbox("Navigation", list(navigation_options.keys()), index=0)
 
 # Use the selected_page to determine the chosen option
 chosen_option = navigation_options[selected_page]
