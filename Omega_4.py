@@ -287,10 +287,10 @@ def company_data_analysis():
         top_ticker_table = st.sidebar.empty()  # Create an empty placeholder for the table
 
         if top_ticker_table.button("Refresh Top Tickers"):  # Add a "Refresh" button
-            top_ticker_data = cov_corr_df.head(10)[['Ticker', 'Correlation', 'Covariance']]
+            top_ticker_data = cov_corr_df.head(10)[['Ticker', 'Correlation', 'Scaled Covariance']]
             top_ticker_table.dataframe(top_ticker_data)
         else:
-            top_ticker_table.dataframe(cov_corr_df.head(10)[['Ticker', 'Correlation', 'Covariance']])
+            top_ticker_table.dataframe(cov_corr_df.head(10)[['Ticker', 'Correlation', 'Scaled Covariance']])
 
 
         # Create return and return% tables
