@@ -1,4 +1,3 @@
-
 import streamlit as st
 
 # Function for Page 1
@@ -15,10 +14,6 @@ def fetch_company_data(tickers, period):
         print(f"No data found for tickers: {tickers}")
         return None
 
-
-
-# Dashboard Page
-def dashboard_page():
     st.title("Financial Analysis Dashboard")
     st.write("This is the work of Nazrin Shamsudin, enjoy the analysis of stock prices.🙂")
 
@@ -164,10 +159,10 @@ def page2():
     st.write("This is Page 2. Replace this with your Page 2 content.")
 
     import yfinance as yf
-import pandas as pd
-import wikipedia
-import streamlit as st
-import plotly.graph_objects as go
+    import pandas as pd
+    import wikipedia
+    import streamlit as st
+    import plotly.graph_objects as go
 
 # Function to fetch company data
 def fetch_company_data(tickers, period, num_data_points):
