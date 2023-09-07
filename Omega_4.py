@@ -142,7 +142,7 @@ def financial_analysis_dashboard():
             y=[scaled_covariance],
             mode='markers',
             marker=dict(size=15),
-            text=[f"{ticker} (Cov: {scaled_covariance:.6f}, Corr: {correlation:.2f})"],
+            text=[f"{ticker} (Cov: {scaled_covariance:.2f}, Corr: {correlation:.2f})"],
             hoverinfo='text',
             name=ticker
         ))
@@ -232,7 +232,7 @@ def company_data_analysis():
                 y=[scaled_covariance],
                 mode='markers',
                 marker=dict(size=15),
-                text=[f"{ticker} (Scaled Cov: {scaled_covariance:.5f}, Corr: {correlation:.5f})"],
+                text=[f"{ticker} (Scaled Cov: {scaled_covariance:.2f}, Corr: {correlation:.2f})"],
                 hoverinfo='text',
                 name=ticker
             ))
