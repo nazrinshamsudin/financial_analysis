@@ -371,7 +371,7 @@ def company_data_analysis():
     sp500_tickers = df["Symbol"].tolist()
 
     # Define the selected tickers (initially)
-    selected_tickers = ["AAPL", "MSFT", "AMZN", "GOOGL", "NVDA"]
+    selected_tickers = ["AAPL", "MSFT", "AMZN", "GOOGL", "NVDA", "META", "AMD", "JPM", "ADBE", "CSCO", "INTC", "QCOM", "SBUX", "MCD", "XOM", "WMT"]
 
     # Streamlit App
     st.title("S&P 500 Company Data Analysis")
